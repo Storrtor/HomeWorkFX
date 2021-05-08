@@ -1,5 +1,6 @@
 package sample;
 
+import java.awt.event.ActionEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -27,18 +28,19 @@ public class Controller {
 
     @FXML
     void initialize() {
-            sendMessageButton.setOnAction(event -> {
-                if (inputTextField.getText().trim().length() == 0){
-                } else {
+    }
+
+    public void btnClicked(javafx.event.ActionEvent actionEvent) {
+        sendMessageButton.setOnAction(event -> {
+            if (inputTextField.getText().trim().length() == 0){
+            } else {
                 String text = inputTextField.getText();
                 builder.append(text).append("\n");
                 outTextArea.setText(builder.toString());
                 outTextArea.setScrollTop(Double.MAX_VALUE);
                 inputTextField.clear();
-                }
-            });
-
-
+            }
+        });
     }
 }
 

@@ -12,7 +12,7 @@
    <children>
       <AnchorPane layoutY="92.0" prefHeight="608.0" prefWidth="500.0" style="-fx-background-color: #FAFAFA;">
          <children>
-            <Button fx:id="sendMessageButton" defaultButton="true" layoutX="261.0" layoutY="555.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="225.0" style="-fx-background-color: #F39C63;" text="Отправить сообщение" textFill="WHITE">
+            <Button  onAction="#btnClicked" fx:id="sendMessageButton" defaultButton="true" layoutX="261.0" layoutY="555.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="225.0" style="-fx-background-color: #F39C63;" text="Отправить сообщение" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="15.0" />
                </font>
