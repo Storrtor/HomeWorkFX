@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane layoutY="92.0" prefHeight="608.0" prefWidth="500.0" style="-fx-background-color: #FAFAFA;">
+         <children>
+            <Button  onAction="#btnClicked" fx:id="sendMessageButton" defaultButton="true" layoutX="261.0" layoutY="555.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="225.0" style="-fx-background-color: #F39C63;" text="Отправить сообщение" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="inputTextField" layoutX="12.0" layoutY="462.0" prefHeight="83.0" prefWidth="476.0" promptText="Введите сообщение">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <TextArea fx:id="outTextArea" editable="false" layoutX="11.0" layoutY="13.0" prefHeight="437.0" prefWidth="476.0" style="-fx-border-color: #F39C63; -fx-control-inner-background: #FCEAD8;" wrapText="true">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextArea>
+         </children>
+      </AnchorPane>
+      <Label alignment="TOP_CENTER" layoutY="14.0" prefHeight="58.0" prefWidth="500.0" text="My Chat" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
